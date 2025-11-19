@@ -23,8 +23,10 @@
   "name":"WIPOfficeGame",
   "resources":[
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
+    {"id":{"name":"oShotgun","path":"objects/oShotgun/oShotgun.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+    {"id":{"name":"sShotgun","path":"sprites/sShotgun/sShotgun.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
