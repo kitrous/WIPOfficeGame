@@ -14,8 +14,22 @@ if (_xinput != 0 && _yinput != 0) {
 	_yinput *= 0.7071;
 }
 
-x += _xinput * myspd;
-y += _yinput * myspd;
+if (_xinput != 0) {
+	var h_move = _xinput * myspd;
+}
+if (_yinput != 0) {
+	var v_move = _yinput * myspd;
+}
+
+if (_xinput != 0) {
+	var h_move = _xinput * myspd;
+	var horizontal_collision = move_and_collide(h_move, 0,oWall);
+}
+
+if (_yinput != 0) {
+	var v_move = _yinput * myspd;
+	var vertical_collision = move_and_collide(0, v_move,oWall);
+}
 
 }
 

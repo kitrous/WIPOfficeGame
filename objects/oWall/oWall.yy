@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oShotgun",
+  "%Name":"oWall",
   "eventList":[],
   "managed":true,
-  "name":"oShotgun",
+  "name":"oWall",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"oPlayer",
-    "path":"objects/oPlayer/oPlayer.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sShotgun",
-    "path":"sprites/sShotgun/sShotgun.yy",
+    "name":"sWall",
+    "path":"sprites/sWall/sWall.yy",
   },
   "spriteMaskId":null,
   "visible":true,
