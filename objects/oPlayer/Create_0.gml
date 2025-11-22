@@ -9,27 +9,20 @@ var _down = keyboard_check(ord("S"));
 var _xinput = _right - _left;
 var _yinput = _down - _up;
 
-if (_xinput != 0 && _yinput != 0) {
-	_xinput *= 0.7071;
-	_yinput *= 0.7071;
-}
 
-if (_xinput != 0) {
-	var h_move = _xinput * myspd;
-}
-if (_yinput != 0) {
-	var v_move = _yinput * myspd;
-}
+var _spd = 0;
+moveDir = point_direction(0,0,_xinput,_yinput);
 
-if (_xinput != 0) {
-	var h_move = _xinput * myspd;
-	var horizontal_collision = move_and_collide(h_move, 0,oWall);
-}
+var _inputLevel = point_distance(0,0,_xinput,_yinput);
+_inputLevel = clamp(_inputLevel,0,1);
+_spd = myspd * _inputLevel;
 
-if (_yinput != 0) {
-	var v_move = _yinput * myspd;
-	var vertical_collision = move_and_collide(0, v_move,oWall);
-}
+xspd = lengthdir_x(_spd,moveDir);
+yspd = lengthdir_y(_spd,moveDir);
+
+//move player
+x += xspd;
+y += yspd;
 
 }
 
