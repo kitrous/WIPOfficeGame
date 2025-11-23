@@ -5,7 +5,8 @@ var _left = keyboard_check(ord("A"));
 var _up = keyboard_check(ord("W"));
 var _down = keyboard_check(ord("S"));
 
-
+//player movement+collision
+#region
 var _xinput = _right - _left;
 var _yinput = _down - _up;
 
@@ -32,14 +33,23 @@ yspd = 0;
 //move player
 x += xspd;
 y += yspd;
-
+#endregion
 }
 
 myspd = 2.5;
 
-function AimLogic() {
-mouseDirection = point_direction(x,y,mouse_x,mouse_y);	
 
+
+//sprite control
+	face = 3;
+	sprite[0] = sPlayerRight;
+	sprite[1] = sPlayerUp;
+	sprite[2] = sPlayerLeft;
+	sprite[3] = sPlayerDown;
 	
-image_angle = (mouseDirection div 10) * 10;
-}
+	weaponOffsetDist = 2;
+	
+	
+	centerYOffset = -4;
+	centerY = y + centerYOffset;// set in step event
+	aimDir = 0;
