@@ -58,15 +58,20 @@ y += yspd;
 	depth = -bbox_bottom;
 
 //shoot the weapon
-	if shootKey {
-	
+if shootTimer > 0 { shootTimer--; };
+
+	if shootKey && shootTimer <= 0
+	{
+	//reset timer
+	shootTimer = shootCooldown;
 	//create bullet
 		var _xOffset = lengthdir_x( weaponLength + weaponOffsetDist, aimDir);
 		var _yOffset = lengthdir_y( weaponLength + weaponOffsetDist, aimDir);
 		var _bulletInst = instance_create_depth(x + _xOffset,centerY + _yOffset,depth-100,bulletObj);
 	
 	//change bullets direction
-		with( _bulletInst ){
+		with( _bulletInst )
+		{
 			dir = other.aimDir;
 		}
 	}

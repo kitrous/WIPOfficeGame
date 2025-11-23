@@ -20,5 +20,8 @@ myspd = 2.5;
 	aimDir = 0;
 
 //weaponinfo
+	shootTimer = 0;
+	shootCooldown = 25;
+
 	bulletObj = oBullet;
 	weaponLength = sprite_get_bbox_right(sShotgun) - sprite_get_xoffset(sShotgun);
