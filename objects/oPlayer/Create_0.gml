@@ -4,7 +4,7 @@ var _right = keyboard_check(ord("D"));
 var _left = keyboard_check(ord("A"));
 var _up = keyboard_check(ord("W"));
 var _down = keyboard_check(ord("S"));
-
+shootKey = mouse_check_button(mb_left);
 //player movement+collision
 #region
 var _xinput = _right - _left;
@@ -53,3 +53,6 @@ myspd = 2.5;
 	centerYOffset = -4;
 	centerY = y + centerYOffset;// set in step event
 	aimDir = 0;
+
+//weaponinfo
+	bulletObj = oBullet;

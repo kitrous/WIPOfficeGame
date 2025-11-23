@@ -23,3 +23,15 @@ MovementLogic();
 	
 	//depth 
 	depth = -bbox_bottom;
+
+//shoot the weapon
+	if shootKey {
+	
+	//create bullet
+		var _bulletInst = instance_create_depth(x,centerY,depth-100,bulletObj)
+	
+	//change bullets direction
+		with( _bulletInst ){
+			dir = other.aimDir;
+		}
+	}
