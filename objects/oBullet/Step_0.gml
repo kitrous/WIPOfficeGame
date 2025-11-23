@@ -8,5 +8,17 @@
 	//collision
 	if place_meeting(x,y,oSolidWall)
 	{
+		destroy = true;
+	}
+	
+	//bullet out of range
+	if point_distance(xstart,ystart,x,y) > maxDist
+	{
+		destroy = true;
+	}
+	
+	//destroy
+	if destroy == true{
 		instance_destroy();
+	
 	}
