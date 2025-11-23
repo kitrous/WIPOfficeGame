@@ -5,6 +5,15 @@
 	x += xspd;
 	y += yspd;
 	
+	
+	
+	
+	
+		//destroy
+	if destroy == true{
+		instance_destroy();
+	
+	}
 	//collision
 	if place_meeting(x,y,oSolidWall)
 	{
@@ -17,8 +26,4 @@
 		destroy = true;
 	}
 	
-	//destroy
-	if destroy == true{
-		instance_destroy();
 	
-	}

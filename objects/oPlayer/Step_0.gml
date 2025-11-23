@@ -61,7 +61,9 @@ y += yspd;
 	if shootKey {
 	
 	//create bullet
-		var _bulletInst = instance_create_depth(x,centerY,depth-100,bulletObj)
+		var _xOffset = lengthdir_x( weaponLength + weaponOffsetDist, aimDir);
+		var _yOffset = lengthdir_y( weaponLength + weaponOffsetDist, aimDir);
+		var _bulletInst = instance_create_depth(x + _xOffset,centerY + _yOffset,depth-100,bulletObj);
 	
 	//change bullets direction
 		with( _bulletInst ){
