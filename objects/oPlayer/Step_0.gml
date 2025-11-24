@@ -79,15 +79,23 @@ if shootTimer > 0 { shootTimer--; };
 	if shootKey && shootTimer <= 0
 	{
 	//reset timer
-	shootTimer = weapon.cooldown;
+		shootTimer = weapon.cooldown;
 	//create bullet
 		var _xOffset = lengthdir_x( weapon.length + weaponOffsetDist, aimDir);
 		var _yOffset = lengthdir_y( weapon.length + weaponOffsetDist, aimDir);
-		var _bulletInst = instance_create_depth(x + _xOffset,centerY + _yOffset,depth-100,weapon.bulletObj);
-	
-	//change bullets direction
-		with( _bulletInst )
+		
+		var _spread = weapon.spread;
+		var _spreadDiv = _spread / weapon.bulletNum;
+		
+		//creates number of bullet
+		for ( var i = 0; i < weapon.bulletNum; i++ )
 		{
-			dir = other.aimDir;
-		}
+			var _bulletInst = instance_create_depth(x + _xOffset,centerY + _yOffset,depth-100,weapon.bulletObj);
+	
+		//change bullets direction
+			with( _bulletInst )
+			{
+				dir = other.aimDir - _spread/2 + _spreadDiv*i;
+			}
+	}
 	}

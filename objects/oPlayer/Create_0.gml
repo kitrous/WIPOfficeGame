@@ -26,6 +26,7 @@ myspd = 2.5;
 	array_push(global.PlayerWeapons,global.weaponList.shotgun );
 	array_push(global.PlayerWeapons, global.weaponList.AR );
 	
+	
 	selectedWeapon = 0;
 	weapon = global.PlayerWeapons[1];
 
