@@ -6,8 +6,8 @@
   "name":"oSmallerEnemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enemy Objects and Sprites",
+    "path":"folders/Enemy Objects and Sprites.yy",
   },
   "parentObjectId":{
     "name":"oEnemyParent",

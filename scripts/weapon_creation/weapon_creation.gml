@@ -1,0 +1,1 @@
+//constructor template for weapons

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Wall Objects and Sprites",
+    "path":"folders/Wall Objects and Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

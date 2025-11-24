@@ -10,5 +10,5 @@ var _weaponYsc1 = 1;
 if aimDir > 90 && aimDir < 270{
 _weaponYsc1 = -1;
 }
-draw_sprite_ext( sShotgun, 0 , x + _xOffset, centerY + _yOffset, 1,_weaponYsc1,aimDir,c_white,1);
+draw_sprite_ext( weapon.sprite, 0 , x + _xOffset, centerY + _yOffset, 1,_weaponYsc1,aimDir,c_white,1);
 }

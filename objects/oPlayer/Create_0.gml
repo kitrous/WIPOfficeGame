@@ -21,7 +21,16 @@ myspd = 2.5;
 
 //weaponinfo
 	shootTimer = 0;
-	shootCooldown = 25;
+	
+	
+	
+	
+	
+	shotgun = {
+		sprite : sShotgun,
+		length : sprite_get_bbox_right(sShotgun) - sprite_get_xoffset(sShotgun),
+		bulletObj : oBullet,
+		cooldown : 25,
+	}
 
-	bulletObj = oBullet;
-	weaponLength = sprite_get_bbox_right(sShotgun) - sprite_get_xoffset(sShotgun);
+weapon = shotgun;

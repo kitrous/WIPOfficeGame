@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Gun Objects and Sprites",
+    "path":"folders/Gun Objects and Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

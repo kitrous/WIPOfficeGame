@@ -6,8 +6,8 @@
   "name":"oSolidWall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Wall Objects and Sprites",
+    "path":"folders/Wall Objects and Sprites.yy",
   },
   "parentObjectId":{
     "name":"oCollisionWall",

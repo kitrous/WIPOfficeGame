@@ -10,8 +10,8 @@
   "name":"oPlayer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Player Objects and Sprites",
+    "path":"folders/Player Objects and Sprites.yy",
   },
   "parentObjectId":null,
   "persistent":false,

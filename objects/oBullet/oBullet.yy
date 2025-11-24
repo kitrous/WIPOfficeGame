@@ -9,8 +9,8 @@
   "name":"oBullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Gun Objects and Sprites",
+    "path":"folders/Gun Objects and Sprites.yy",
   },
   "parentObjectId":null,
   "persistent":false,
