@@ -85,7 +85,7 @@ if shootTimer > 0 { shootTimer--; };
 		var _yOffset = lengthdir_y( weapon.length + weaponOffsetDist, aimDir);
 		
 		var _spread = weapon.spread;
-		var _spreadDiv = _spread / weapon.bulletNum;
+		var _spreadDiv = _spread / max(weapon.bulletNum-1,1);
 		
 		//creates number of bullet
 		for ( var i = 0; i < weapon.bulletNum; i++ )
@@ -96,6 +96,11 @@ if shootTimer > 0 { shootTimer--; };
 			with( _bulletInst )
 			{
 				dir = other.aimDir - _spread/2 + _spreadDiv*i;
+				
+				//turn bullet
+				if dirFix == true{
+				image_angle = dir;
+				}
 			}
 	}
 	}
