@@ -22,15 +22,10 @@ myspd = 2.5;
 //weaponinfo
 	shootTimer = 0;
 	
+	//add weapons to player weapon inv
+	array_push(global.PlayerWeapons,global.weaponList.shotgun );
+	array_push(global.PlayerWeapons, global.weaponList.AR );
 	
-	
-	
-	
-	shotgun = {
-		sprite : sShotgun,
-		length : sprite_get_bbox_right(sShotgun) - sprite_get_xoffset(sShotgun),
-		bulletObj : oBullet,
-		cooldown : 25,
-	}
+	selectedWeapon = 0;
+	weapon = global.PlayerWeapons[1];
 
-weapon = shotgun;

@@ -26,6 +26,7 @@
   "name":"WIPOfficeGame",
   "resources":[
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},
+    {"id":{"name":"oBulletAR","path":"objects/oBulletAR/oBulletAR.yy",},},
     {"id":{"name":"oCollisionWall","path":"objects/oCollisionWall/oCollisionWall.yy",},},
     {"id":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
@@ -35,7 +36,9 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"custom_functions","path":"scripts/custom_functions/custom_functions.yy",},},
     {"id":{"name":"weapon_creation","path":"scripts/weapon_creation/weapon_creation.yy",},},
+    {"id":{"name":"sAR","path":"sprites/sAR/sAR.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
+    {"id":{"name":"sBulletAR","path":"sprites/sBulletAR/sBulletAR.yy",},},
     {"id":{"name":"sCollisionWall","path":"sprites/sCollisionWall/sCollisionWall.yy",},},
     {"id":{"name":"sPlayerDown","path":"sprites/sPlayerDown/sPlayerDown.yy",},},
     {"id":{"name":"sPlayerLeft","path":"sprites/sPlayerLeft/sPlayerLeft.yy",},},

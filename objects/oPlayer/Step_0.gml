@@ -4,6 +4,8 @@ var _left = keyboard_check(ord("A"));
 var _up = keyboard_check(ord("W"));
 var _down = keyboard_check(ord("S"));
 shootKey = mouse_check_button(mb_left);
+swapKeyPressed = mouse_check_button_pressed(mb_right);
+
 //player movement+collision
 #region
 var _xinput = _right - _left;
@@ -56,6 +58,20 @@ y += yspd;
 	
 	//depth 
 	depth = -bbox_bottom;
+
+//weapon swapping
+	var _playerWeapons = global.PlayerWeapons;
+		
+		//cycle through weapons
+		if swapKeyPressed
+		{
+			//change selection 
+			selectedWeapon++;
+			if selectedWeapon >= array_length(_playerWeapons) { selectedWeapon = 0; };
+			
+			//set new weapon
+			weapon = _playerWeapons[selectedWeapon];
+		}
 
 //shoot the weapon
 if shootTimer > 0 { shootTimer--; };
