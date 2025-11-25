@@ -9,3 +9,4 @@ yspd = 0;
 dirFix = false;
 maxDist = 80;
 destroy = false;
+enemyDestroy = false;
