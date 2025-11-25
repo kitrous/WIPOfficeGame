@@ -1,4 +1,20 @@
-var _hor = clamp(target_x - x, -1,1);
-var _ver = clamp(target_y - y, -1,1);
+//rec damage
+	if place_meeting(x , y, oDamageEnemy){
+	
+		var _inst = instance_place(x,y,oDamageEnemy);
+	
+		//take damage from instance
+			hp -= _inst.damage;
+		
+		//tell damage instance to destroy self
+			_inst.destroy = true;
 
-move_and_collide(_hor * move_speed, _ver * move_speed, [oCollisionWall,oEnemyParent]);
+}
+
+
+
+//death
+	if hp <= 0
+	{
+	instance_destroy();
+	}

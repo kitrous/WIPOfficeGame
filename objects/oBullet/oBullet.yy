@@ -12,7 +12,10 @@
     "name":"Gun Objects and Sprites",
     "path":"folders/Gun Objects and Sprites.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oDamageEnemy",
+    "path":"objects/oDamageEnemy/oDamageEnemy.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

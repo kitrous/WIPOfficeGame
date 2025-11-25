@@ -1,7 +1,3 @@
-target_x = x;
-target_y = y;
+hp = 10;
 
-alarm[0] = 60;
 
-image_speed = 0.2;
-image_index += 1;
