@@ -8,6 +8,11 @@
 	
 	
 	
+//cleanup
+
+	//hit confirm destroy
+	if hitConfirm == true { destroy = true; };
+	
 	
 		//destroy
 	if destroy == true{

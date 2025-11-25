@@ -20,8 +20,8 @@
 				//take damage from specific instance
 					hp -= _inst.damage;
 				
-				//tell damage to destroy itself
-					_inst.destroy = true;
+				//tell damage instance it has impacted
+					_inst.hitConfirm = true;
 				}
 			}
 		
