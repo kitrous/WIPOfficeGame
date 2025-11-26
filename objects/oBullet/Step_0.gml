@@ -11,7 +11,7 @@
 //cleanup
 
 	//hit confirm destroy
-	if hitConfirm == true { destroy = true; };
+	if hitConfirm == true && enemyDestroy == true  { destroy = true; };
 	
 	
 		//destroy

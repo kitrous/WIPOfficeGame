@@ -6,5 +6,6 @@ event_inherited();
 spd = 8;
 dirFix = true;
 maxDist = 400;
+enemyDestroy = true;
 
 
