@@ -10,7 +10,7 @@ var _weaponYsc1 = 1;
 if aimDir > 90 && aimDir < 270{
 _weaponYsc1 = -1;
 }
-draw_sprite_ext( weapon.sprite, 0 , x + _xOffset, centerY + _yOffset, 1,_weaponYsc1,aimDir,c_white,1);
+draw_sprite_ext( weapon.sprite, 0 , x + _xOffset, centerY + _yOffset, 1,_weaponYsc1,aimDir,c_white,image_alpha);
 }
 
 //damage calculation
@@ -45,12 +45,28 @@ draw_sprite_ext( weapon.sprite, 0 , x + _xOffset, centerY + _yOffset, 1,_weaponY
 	//damage step event 
 	function get_damaged(_damageObj, _iframes = false) 
 	{
-	//special exit for iframe timer
-	if _iframes == true && iframeTimer > 0 
+		//special exit for iframe timer
+		if _iframes == true && iframeTimer > 0 
 	{
 		iframeTimer--;
+		
+		if iframeTimer mod 5 == 0
+		{
+			if image_alpha == 1
+			{
+				image_alpha = 0;
+			} else {
+				image_alpha = 1;
+			}
+		}
 		exit;
 	}
+	
+	//make sure iframe blinking stops
+	if _iframes == true {image_alpha = 1;}
+
+	
+	
 	//rec damage
 	if place_meeting(x , y, _damageObj){
 		
