@@ -37,7 +37,7 @@ y += yspd;
 
 
 //get damaged
-get_damaged(oDamagePlayer);
+get_damaged(oDamagePlayer, true);
 
 //aiming
 	centerY = y + centerYOffset;

@@ -15,25 +15,42 @@ draw_sprite_ext( weapon.sprite, 0 , x + _xOffset, centerY + _yOffset, 1,_weaponY
 
 //damage calculation
 	//damage create event
-	function get_damaged_create(_hp = 10)
+	function get_damaged_create(_hp = 10, _iframes = false)
 	{
 		hp = _hp;
 		
+		//get the iframes
+		if _iframes == true
+		{
+			iframeTimer = 0;
+			iframeNumber = 90;
+		}
+		
 		//create damage list
+		if _iframes == false
+		{
 		damageList = ds_list_create();
+		}
 	}
 	
 	//damage cleanup event
 	function get_damaged_cleanup()
 	{
+		//not needed if using iframes
+		
 		//delete our damage list data structure to free memory
 		ds_list_destroy(damageList);
 	}
 	
 	//damage step event 
-	function get_damaged(_damageObj) 
+	function get_damaged(_damageObj, _iframes = false) 
 	{
-	
+	//special exit for iframe timer
+	if _iframes == true && iframeTimer > 0 
+	{
+		iframeTimer--;
+		exit;
+	}
 	//rec damage
 	if place_meeting(x , y, _damageObj){
 		
@@ -45,27 +62,40 @@ draw_sprite_ext( weapon.sprite, 0 , x + _xOffset, centerY + _yOffset, 1,_weaponY
 			//size of our list
 				var _listSize = ds_list_size(_instList);
 			//loop through list
+			var _hitConfirm = false;
+			
 				for( var i = 0; i < _listSize; i++){
 					var _inst = ds_list_find_value( _instList, i );
 					
 				//check if instance is already in the damage list
-				if ds_list_find_index( damageList, _inst ) == -1
+				if	_iframes == true || ds_list_find_index( damageList, _inst ) == -1
 				{
 				//add new damage instance to the damage list
+				if _iframes == false
+				{
 					ds_list_add(damageList, _inst);
+				}
 				//take damage from specific instance
 					hp -= _inst.damage;
-				
+				_hitConfirm = true;
 				//tell damage instance it has impacted
 					_inst.hitConfirm = true;
 				}
 			}
-		
+			//set iframes if hit
+			if _iframes == true && _hitConfirm
+			{
+			iframeTimer = iframeNumber;
+			
+			}
+			
 			//free memory by destroying ds list
 				ds_list_destroy(_instList);
 }
 
 	//clear the damage list of objects that dont exist anymore or arent touching anymore
+	if _iframes == false
+	{
 		var _damageListSize = ds_list_size(damageList);
 		for( var i = 0; i < _damageListSize; i++){
 		//if not touching the damage instance anymore, remove it from the list and set loop back 1 position
@@ -76,6 +106,7 @@ draw_sprite_ext( weapon.sprite, 0 , x + _xOffset, centerY + _yOffset, 1,_weaponY
 				i--;
 				_damageListSize--;
 			}
+		}
 		}
 	}
 	

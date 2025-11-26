@@ -1,3 +1,4 @@
-get_damaged_create();
+event_inherited();
+	get_damaged_create();
 	
 

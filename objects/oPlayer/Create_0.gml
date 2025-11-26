@@ -1,5 +1,5 @@
 //damagesetup
-	get_damaged_create(20);
+	get_damaged_create(20, true);
 	
 
 
