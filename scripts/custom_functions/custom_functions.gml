@@ -23,6 +23,13 @@ draw_sprite_ext( weapon.sprite, 0 , x + _xOffset, centerY + _yOffset, 1,_weaponY
 		damageList = ds_list_create();
 	}
 	
+	//damage cleanup event
+	function get_damaged_cleanup()
+	{
+		//delete our damage list data structure to free memory
+		ds_list_destroy(damageList);
+	}
+	
 	//damage step event 
 	function get_damaged(_damageObj) 
 	{

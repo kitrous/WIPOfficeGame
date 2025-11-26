@@ -1,4 +1,6 @@
-
+//damagesetup
+	get_damaged_create(20);
+	
 
 
 myspd = 2.5;

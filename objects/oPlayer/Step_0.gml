@@ -36,6 +36,9 @@ x += xspd;
 y += yspd;
 
 
+//get damaged
+get_damaged(oDamagePlayer);
+
 //aiming
 	centerY = y + centerYOffset;
 	aimDir = point_direction(x,centerY,mouse_x,mouse_y);
