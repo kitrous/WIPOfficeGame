@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"Path1",
+  "closed":false,
+  "kind":0,
+  "name":"Path1",
+  "parent":{
+    "name":"WIPOfficeGame",
+    "path":"WIPOfficeGame.yyp",
+  },
+  "points":[
+    {"speed":100.0,"x":128.00003,"y":161.0,},
+    {"speed":100.0,"x":127.00003,"y":256.0,},
+    {"speed":100.0,"x":225.00003,"y":255.0,},
+    {"speed":100.0,"x":225.00003,"y":161.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
