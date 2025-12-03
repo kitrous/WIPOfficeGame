@@ -37,6 +37,7 @@
     {"id":{"name":"oOfficeTable","path":"objects/oOfficeTable/oOfficeTable.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oRat","path":"objects/oRat/oRat.yy",},},
+    {"id":{"name":"oShinyKey","path":"objects/oShinyKey/oShinyKey.yy",},},
     {"id":{"name":"oShotgun","path":"objects/oShotgun/oShotgun.yy",},},
     {"id":{"name":"oSolidWall","path":"objects/oSolidWall/oSolidWall.yy",},},
     {"id":{"name":"oTemptation","path":"objects/oTemptation/oTemptation.yy",},},
