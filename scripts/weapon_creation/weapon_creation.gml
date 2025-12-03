@@ -18,7 +18,7 @@ global.PlayerWeapons = array_create(0);
 global.weaponList = {
 
 	shotgun : new create_weapon(sShotgun, sprite_get_bbox_right(sShotgun) - sprite_get_xoffset(sShotgun),oBullet,25,4,45),
-	AR :  new create_weapon(sAR, sprite_get_bbox_right(sAR) - sprite_get_xoffset(sAR),oBulletAR, 4,1,0),
+	AR :  new create_weapon(sAR, sprite_get_bbox_right(sAR) - sprite_get_xoffset(sAR),oBulletAR, 10,1,0),
 }
 
 	
