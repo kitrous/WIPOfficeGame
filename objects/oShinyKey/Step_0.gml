@@ -34,10 +34,6 @@
 //death
 	if hp <= 0
 	{
-
+	keyObtain = true;
 	instance_destroy();
 	}
-if hp == 0
-{
-keyObtain = true;
-}
