@@ -31,9 +31,11 @@
 
 
 
-//death
+//death and key obtain
 	if hp <= 0
 	{
-	keyObtain = true;
+	global.keyObtain = true;
 	instance_destroy();
 	}
+
+	
