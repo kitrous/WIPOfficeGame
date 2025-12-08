@@ -12,5 +12,4 @@ face = 1;
 //chase mechanic
 colDistance = 100;
 
-//enemies cleared
-global.enemiesCleared = false;
+
