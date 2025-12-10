@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Enemy Objects and Sprites","folderPath":"folders/Enemy Objects and Sprites.yy","name":"Enemy Objects and Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Gun Objects and Sprites","folderPath":"folders/Gun Objects and Sprites.yy","name":"Gun Objects and Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player Objects and Sprites","folderPath":"folders/Player Objects and Sprites.yy","name":"Player Objects and Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scribble","folderPath":"folders/Scribble.yy","name":"Scribble","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -203,6 +204,7 @@
     {"id":{"name":"__shd_scribble_bake_outline_8dir","path":"shaders/__shd_scribble_bake_outline_8dir/__shd_scribble_bake_outline_8dir.yy",},},
     {"id":{"name":"__shd_scribble_bake_shadow","path":"shaders/__shd_scribble_bake_shadow/__shd_scribble_bake_shadow.yy",},},
     {"id":{"name":"__shd_scribble","path":"shaders/__shd_scribble/__shd_scribble.yy",},},
+    {"id":{"name":"keyObtain","path":"sounds/keyObtain/keyObtain.yy",},},
     {"id":{"name":"officetiles","path":"sprites/officetiles/officetiles.yy",},},
     {"id":{"name":"sAR","path":"sprites/sAR/sAR.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
@@ -218,6 +220,7 @@
     {"id":{"name":"Sprite14","path":"sprites/Sprite14/Sprite14.yy",},},
     {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},},
     {"id":{"name":"Sprite21","path":"sprites/Sprite21/Sprite21.yy",},},
+    {"id":{"name":"Sprite22","path":"sprites/Sprite22/Sprite22.yy",},},
     {"id":{"name":"sRat","path":"sprites/sRat/sRat.yy",},},
     {"id":{"name":"sShinyKey","path":"sprites/sShinyKey/sShinyKey.yy",},},
     {"id":{"name":"sShotgun","path":"sprites/sShotgun/sShotgun.yy",},},

@@ -125,4 +125,3 @@ draw_sprite_ext( weapon.sprite, 0 , x + _xOffset, centerY + _yOffset, 1,_weaponY
 		}
 		}
 	}
-

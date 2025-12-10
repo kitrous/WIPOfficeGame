@@ -19,10 +19,12 @@
 		if place_meeting( x + xspd,y,oCollisionWall) || place_meeting( x + xspd,y,oEnemyParent)
 		{
 		xspd = 0;
+		
 		}
 		if place_meeting(x,y+yspd,oCollisionWall) || place_meeting(x, y + yspd,oEnemyParent)
 		{
 		yspd = 0;
+		
 		}
 	//moving
 		x += xspd;
