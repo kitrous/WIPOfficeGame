@@ -5,4 +5,5 @@
 	image_speed = .5;
 	
 //pathing
-	path_start(Path1,1.5,path_action_reverse,3);
+	path_start(Path1,2,path_action_reverse,3);
+	

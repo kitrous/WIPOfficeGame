@@ -30,6 +30,13 @@ if place_meeting(x,y + yspd, oCollisionWall){
 yspd = 0;
 }
 
+if place_meeting(x + xspd, y, oDoor) && global.keyObtain && global.enemiesCleared == true{
+room_goto_next()
+}
+if place_meeting(x,y + yspd, oDoor)&& global.keyObtain && global.enemiesCleared == true {
+room_goto_next()
+}
+
 
 //move player
 x += xspd;
