@@ -12,5 +12,5 @@ face = 1;
 //chase mechanic
 colDistance = 100;
 
-image_speed = .5;
+image_speed = .3;
 

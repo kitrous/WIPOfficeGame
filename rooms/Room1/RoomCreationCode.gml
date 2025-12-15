@@ -3,3 +3,8 @@
 	{
 		global.enemiesCleared = true;
 	}
+	
+//sequence
+	
+	
+	

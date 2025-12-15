@@ -115,3 +115,7 @@ if shootTimer > 0 { shootTimer--; };
 	}
 	}
 	
+if hp <= 0
+{
+	room_restart();
+}

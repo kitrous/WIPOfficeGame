@@ -1,9 +1,10 @@
 //damagesetup
 	get_damaged_create(20, true);
 	
+//sprite speed
+	image_speed = .3;
 
-
-myspd = 2.5;
+	myspd = 2.5;
 
 
 
